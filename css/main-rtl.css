@@ -1,0 +1,212 @@
+/*rtlmellatweb*/
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/iranyekanwebbold.eot');
+	src: url('fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanwebbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanwebbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/iranyekanweblight.eot');
+	src: url('fonts/eot/iranyekanweblight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanweblight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanweblight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/iranyekanwebregular.eot');
+	src: url('fonts/eot/iranyekanwebregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanwebregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanwebregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanwebregular.ttf') format('truetype');
+}
+
+/* Latin fonts (Roboto) */
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/robotobold.eot');
+	src: url('fonts/eot/robotobold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/robotobold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/robotobold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/robotobold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/robotolight.eot');
+	src: url('fonts/eot/robotolight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/robotolight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/robotolight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/robotolight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: roboto;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/robotoregular.eot');
+	src: url('fonts/eot/robotoregular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/robotoregular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/robotoregular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/robotoregular.ttf') format('truetype');
+}
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/iranyekanwebbold(fanum).eot');
+	src: url('fonts/eot/iranyekanwebbold(fanum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanwebbold(fanum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanwebbold(fanum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanwebbold(fanum).ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/iranyekanweblight(fanum).eot');
+	src: url('fonts/eot/iranyekanweblight(fanum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanweblight(fanum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanweblight(fanum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanweblight(fanum).ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/iranyekanwebregular(fanum).eot');
+	src: url('fonts/eot/iranyekanwebregular(fanum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/iranyekanwebregular(fanum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/iranyekanwebregular(fanum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/iranyekanwebregular(fanum).ttf') format('truetype');
+}
+
+/**IranYekan>>*/  a,body,h1,h2,h3,h4,h5,h6,p,.button, button, input, textarea  {font-family:iranyekan! important;}
+
+
+
+/*desktop css*/
+@media only screen and (min-width: 1025px){
+    .header {
+        float: right;
+    }
+    ul.main-menu {
+        left: -90px ;
+        right: auto ;
+    }
+    .lmpixels-arrows-nav {
+        left: -80px;
+        right: auto ;
+    }
+    ul.main-menu a:hover .link-text {
+        left: 100%;
+        right: auto;
+        direction: ltr;
+    }
+    ul.main-menu .link-text {
+        left: 0;
+        right: auto;
+    }
+    }
+    /*mobile css*/
+    @media only screen and (max-width: 1024px){
+    .lmpixels-arrows-nav {
+        left: 10px;
+        right: auto;
+    }
+    }
+.content-area {
+       left: 0 ;
+      right: AUTO ;
+}
+body,.section-active,h1,h2h,h3,h4,h5,h6,.row,.page-title,about-me,.entry-header,.entry-meta.entry-meta-bottom{
+direction: rtl !important;
+}
+section.animated-section.ps.ps--theme_default.ps--active-y.section-active,.testimonial .text,.post-tags,.ajax-page-title  {
+    text-align: RIGHT;
+}
+.ajax-page-nav {
+    text-align: left;
+}
+.animated-section,.single-page-content,.ajax-page-nav > div.nav-item {
+    direction: ltr !important;
+}
+.testimonials.owl-carousel .owl-nav, .clients.owl-carousel .owl-nav {
+    left: 0;
+    direction: ltr;
+    right: auto;
+}
+.info-list .title {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.info-block-w-icon .ci-icon {
+    padding-left: 25px;
+    padding-right: 0;
+}
+.timeline-second-style .divider {
+    right: 30%;
+    left: auto;
+}
+.skills-info.skills-second-style h4 {
+    float: right;
+}
+.skills-second-style .skill-value,.entry-meta-bottom .entry-share {
+    float: left;
+}
+.timeline-second-style .divider:before {
+    margin-right: -8px;
+    margin-left: 0;
+}
+.form-group label {
+    right: 15px;
+    left: auto;
+}
+.form-group .help-block:after {
+    right: 5px;
+    left: auto;
+}
+blockquote {
+    border-right: 2px solid #d8d8d8;
+    border-left: 0;
+}
+@media only screen and (max-width: 480px){
+	.timeline-second-style .divider {
+		right: 0 !important;
+		
+	}
+	.timeline-second-style .left-part {
+		padding-right: 25px;
+		padding-left: 0;
+		text-align: right;
+	}
+	.timeline-second-style .right-part {
+		width: 100%;
+		display: block;
+		padding-right: 25px;
+		padding-left: 0;
+	}
+	}
+	.header .copyrights {
+		right: 0;
+		left: auto;
+	}
