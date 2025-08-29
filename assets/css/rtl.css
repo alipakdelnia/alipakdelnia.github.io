@@ -1,210 +1,149 @@
-/* RTL Support for Persian Language */
-body {
-    direction: rtl;
-    text-align: right;
-    font-family: 'Tahoma', 'Arial', sans-serif;
+/* RTL Support for Arabic and Persian */
+
+[dir="rtl"] {
+  text-align: right;
 }
 
-/* Language Switcher RTL Adjustments */
-.language-switcher {
-    margin-top: 20px;
-    text-align: center;
+[dir="rtl"] .header {
+  left: auto;
+  right: 0;
 }
 
-.language-switcher a {
-    color: #6c757d;
-    text-decoration: none;
-    margin: 0 5px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
+[dir="rtl"] .main {
+  margin-left: auto;
+  margin-right: 300px;
 }
 
-.language-switcher a:hover {
-    background: rgba(0,123,255,0.1);
-    color: #007bff;
+[dir="rtl"] .header-toggle {
+  left: auto;
+  right: 20px;
 }
 
-.language-switcher a.active {
-    background: #007bff;
-    color: white;
+[dir="rtl"] .navmenu ul {
+  padding-right: 0;
 }
 
-/* Header RTL Adjustments */
-.header .navmenu ul {
-    text-align: right;
+[dir="rtl"] .navmenu ul li {
+  text-align: right;
 }
 
-.header .navmenu ul li a {
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 15px;
+[dir="rtl"] .navmenu ul li a {
+  padding: 10px 20px 10px 15px;
+}
+
+[dir="rtl"] .navmenu ul li a i {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .bi-chevron-right::before {
+  content: "\f284";
+}
+
+[dir="rtl"] .bi-chevron-left::before {
+  content: "\f285";
+}
+
+[dir="rtl"] .language-switcher {
+  text-align: center;
+}
+
+[dir="rtl"] .section-title h2::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .section-title h2::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .progress .skill {
+  text-align: right;
+}
+
+[dir="rtl"] .resume-item ul {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+[dir="rtl"] .portfolio-filters {
+  padding-right: 0;
+}
+
+[dir="rtl"] .info-item {
+  text-align: right;
+}
+
+[dir="rtl"] .info-item i {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+/* Mobile Responsive RTL */
+@media (max-width: 1199px) {
+  [dir="rtl"] .main {
+    margin-right: 0;
+  }
+  
+  [dir="rtl"] .header {
+    right: -300px;
+  }
+  
+  [dir="rtl"] .header.mobile-nav-active {
+    right: 0;
+  }
 }
 
 /* Typography RTL */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Tahoma', 'Arial', sans-serif;
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+  text-align: right;
 }
 
-/* Navigation Icons RTL */
-.navicon {
-    margin-left: 8px;
-    margin-right: 0;
+[dir="rtl"] p {
+  text-align: right;
+}
+
+/* Form RTL */
+[dir="rtl"] .form-control {
+  text-align: right;
+}
+
+[dir="rtl"] label {
+  text-align: right;
+}
+
+/* Button RTL */
+[dir="rtl"] .btn {
+  text-align: center;
 }
 
 /* Social Links RTL */
-.social-links a {
-    margin: 0 5px;
-}
-
-/* Content RTL */
-.content ul li {
-    text-align: right;
-}
-
-.content ul li i {
-    margin-left: 8px;
-    margin-right: 0;
-}
-
-/* Stats Section RTL */
-.stats-item {
-    text-align: center;
-}
-
-/* Skills Section RTL */
-.skill {
-    text-align: right;
-}
-
-.skill .val {
-    float: left;
+[dir="rtl"] .social-links a {
+  margin: 0 0 0 10px;
 }
 
 /* Portfolio Filters RTL */
-.portfolio-filters li {
-    margin: 0 10px;
+[dir="rtl"] .portfolio-filters li {
+  margin: 0 0 0 20px;
 }
 
-/* Testimonials RTL */
-.testimonial-item {
-    text-align: center;
+/* Stats RTL */
+[dir="rtl"] .stats-item {
+  text-align: center;
 }
 
-/* Contact Form RTL */
-.form-control {
-    text-align: right;
+/* Services RTL */
+[dir="rtl"] .service-item {
+  text-align: right;
+}
+
+[dir="rtl"] .service-item .icon {
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 /* Footer RTL */
-.footer {
-    text-align: center;
-}
-
-/* Responsive RTL */
-@media (max-width: 768px) {
-    .header .navmenu ul li a {
-        padding-right: 15px;
-        padding-left: 10px;
-    }
-    
-    .content ul li i {
-        margin-left: 5px;
-        margin-right: 0;
-    }
-}
-
-/* Persian Number Support */
-.persian-numbers {
-    font-family: 'Tahoma', 'Arial', sans-serif;
-}
-
-/* Custom Persian Font Weights */
-.font-weight-light {
-    font-weight: 300;
-}
-
-.font-weight-normal {
-    font-weight: 400;
-}
-
-.font-weight-bold {
-    font-weight: 700;
-}
-
-/* RTL Animation Support */
-[data-aos] {
-    direction: rtl;
-}
-
-/* Custom RTL Classes */
-.text-right-rtl {
-    text-align: right !important;
-}
-
-.text-left-rtl {
-    text-align: left !important;
-}
-
-.margin-right-rtl {
-    margin-right: 0 !important;
-    margin-left: auto !important;
-}
-
-.margin-left-rtl {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-}
-
-/* Persian Typography Enhancements */
-.persian-text {
-    line-height: 1.8;
-    letter-spacing: 0.5px;
-}
-
-/* RTL Button Adjustments */
-.btn {
-    font-family: 'Tahoma', 'Arial', sans-serif;
-}
-
-/* RTL Form Adjustments */
-input, textarea, select {
-    font-family: 'Tahoma', 'Arial', sans-serif;
-}
-
-/* RTL List Adjustments */
-ul, ol {
-    padding-right: 20px;
-    padding-left: 0;
-}
-
-/* RTL Icon Adjustments */
-.bi {
-    font-family: 'bootstrap-icons';
-}
-
-/* Custom Persian Colors */
-.persian-primary {
-    color: #007bff;
-}
-
-.persian-secondary {
-    color: #6c757d;
-}
-
-.persian-success {
-    color: #28a745;
-}
-
-.persian-info {
-    color: #17a2b8;
-}
-
-.persian-warning {
-    color: #ffc107;
-}
-
-.persian-danger {
-    color: #dc3545;
+[dir="rtl"] .footer {
+  text-align: center;
 }

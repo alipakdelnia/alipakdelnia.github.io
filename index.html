@@ -55,6 +55,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- RTL CSS File -->
+  <link href="assets/css/rtl.css" rel="stylesheet">
 
   <!-- Language Switcher -->
   <style>
@@ -194,7 +197,7 @@
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Ali Pakdelnia</h1>
+      <h1 class="sitename" data-translate="hero_title">Ali Pakdelnia</h1>
     </a>
 
     <div class="social-links text-center">
@@ -205,21 +208,23 @@
 
     <!-- Language Switcher -->
     <div class="language-switcher">
-      <a href="./" class="lang-en active">English</a>
-      <a href="./fa/" class="lang-fa">فارسی</a>
+      <a href="#" data-lang="en" class="lang-en active">English</a>
+      <a href="#" data-lang="fa" class="lang-fa">فارسی</a>
+      <a href="#" data-lang="ar" class="lang-ar">العربية</a>
+      <a href="#" data-lang="de" class="lang-de">Deutsch</a>
     </div>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i> Technical Skills</a></li>
-        <li><a href="#soft-skills"><i class="bi bi-people navicon"></i> Soft Skills</a></li>
-        <li><a href="#languages"><i class="bi bi-translate navicon"></i> Languages</a></li>
-        <li><a href="#services"><i class="bi bi-gear navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-translate="nav_home">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span data-translate="nav_about">About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span data-translate="nav_resume">Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span data-translate="nav_portfolio">Portfolio</span></a></li>
+        <li><a href="#skills"><i class="bi bi-hdd-stack navicon"></i><span data-translate="nav_skills">Technical Skills</span></a></li>
+        <li><a href="#soft-skills"><i class="bi bi-people navicon"></i><span data-translate="nav_soft_skills">Soft Skills</span></a></li>
+        <li><a href="#languages"><i class="bi bi-translate navicon"></i><span data-translate="nav_languages">Languages</span></a></li>
+        <li><a href="#services"><i class="bi bi-gear navicon"></i><span data-translate="nav_services">Services</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-translate="nav_contact">Contact</span></a></li>
       </ul>
     </nav>
 
@@ -233,8 +238,8 @@
       <img src="assets/img/hero-bg.jpg" alt="Ali Pakdelnia - Full Stack Developer" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Ali Pakdelnia</h2>
-        <p>I'm a <span class="typed" data-typed-items="Full Stack Developer, Android Developer, .NET Developer, Problem Solver, Freelancer">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2 data-translate="hero_title">Ali Pakdelnia</h2>
+        <p><span data-translate="hero_subtitle">I'm a</span> <span class="typed" data-typed-items="hero_typed_items">Full Stack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -244,8 +249,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Experienced Full Stack Developer with expertise in both Android and web development. Currently working with multiple companies and accepting freelance projects. I specialize in creating comprehensive solutions across all platforms.</p>
+        <h2 data-translate="about_title">About</h2>
+        <p data-translate="about_description">Experienced Full Stack Developer with expertise in both Android and web development. Currently working with multiple companies and accepting freelance projects. I specialize in creating comprehensive solutions across all platforms.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -255,25 +260,25 @@
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Ali Pakdelnia - Full Stack Developer Tehran">
           </div>
           <div class="col-lg-8 content">
-            <h2>Full Stack Developer &amp; Android Specialist</h2>
+            <h2 data-translate="about_subtitle">Full Stack Developer &amp; Android Specialist</h2>
             <p class="fst-italic py-3">
               Experienced Full Stack Developer working with multiple companies and accepting freelance projects. Strong proficiency in both web and mobile development, creating comprehensive solutions across all platforms.
             </p>
             <div class="row">
                           <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ali.pakdelnia77@gmail.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+989909601225</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Tehran, Iran</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="age_label">Age:</strong> <span>26</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="email_label">Email:</strong> <span>ali.pakdelnia77@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="phone_label">Phone:</strong> <span>+989909601225</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="location_label">Location:</strong> <span>Tehran, Iran</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>alipakdelnia.github.io</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <span>github.com/alipakdelnia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span>linkedin.com/in/ali-pakdelnia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span>Freelance Available</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="website_label">Website:</strong> <span>alipakdelnia.github.io</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="github_label">GitHub:</strong> <span>github.com/alipakdelnia</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="linkedin_label">LinkedIn:</strong> <span>linkedin.com/in/ali-pakdelnia</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong data-translate="status_label">Status:</strong> <span data-translate="status_value">Freelance Available</span></li>
               </ul>
             </div>
             </div>
@@ -298,7 +303,7 @@
             <div class="stats-item">
               <i class="bi bi-emoji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>satisfied customers</span></p>
+              <p><strong data-translate="stats_clients_title">Happy Clients</strong> <span data-translate="stats_clients_subtitle">satisfied customers</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -306,7 +311,7 @@
             <div class="stats-item">
               <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>successfully delivered</span></p>
+              <p><strong data-translate="stats_projects_title">Projects</strong> <span data-translate="stats_projects_subtitle">successfully delivered</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -314,7 +319,7 @@
             <div class="stats-item">
               <i class="bi bi-building"></i>
               <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Companies</strong> <span>working with</span></p>
+              <p><strong data-translate="stats_companies_title">Companies</strong> <span data-translate="stats_companies_subtitle">working with</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -322,7 +327,7 @@
             <div class="stats-item">
               <i class="bi bi-calendar-check"></i>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Years Experience</strong> <span>continuous learning</span></p>
+              <p><strong data-translate="stats_experience_title">Years Experience</strong> <span data-translate="stats_experience_subtitle">continuous learning</span></p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -337,8 +342,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <p>My technical expertise spans across multiple platforms and technologies, enabling me to deliver comprehensive solutions</p>
+        <h2 data-translate="technical_skills_title">Technical Skills</h2>
+        <p data-translate="technical_skills_description">My technical expertise spans across multiple platforms and technologies, enabling me to deliver comprehensive solutions</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -348,21 +353,21 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Full Stack Development</span> <i class="val">95%</i></span>
+              <span class="skill"><span data-translate="fullstack_skill">Full Stack Development</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Android/Kotlin</span> <i class="val">90%</i></span>
+              <span class="skill"><span data-translate="android_skill">Android/Kotlin</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Web Development</span> <i class="val">88%</i></span>
+              <span class="skill"><span data-translate="web_skill">Web Development</span> <i class="val">88%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -373,21 +378,21 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>JavaScript/TypeScript</span> <i class="val">85%</i></span>
+              <span class="skill"><span data-translate="javascript_skill">JavaScript/TypeScript</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>React/Angular</span> <i class="val">82%</i></span>
+              <span class="skill"><span data-translate="react_skill">React/Angular</span> <i class="val">82%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Database/SQL</span> <i class="val">80%</i></span>
+              <span class="skill"><span data-translate="database_skill">Database/SQL</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -406,8 +411,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Soft Skills</h2>
-        <p>Essential interpersonal and professional skills that complement my technical expertise</p>
+        <h2 data-translate="soft_skills_title">Soft Skills</h2>
+        <p data-translate="soft_skills_description">Essential interpersonal and professional skills that complement my technical expertise</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -417,21 +422,21 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Planning</span> <i class="val">96%</i></span>
+              <span class="skill"><span data-translate="planning_skill">Planning</span> <i class="val">96%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Creativity</span> <i class="val">93%</i></span>
+              <span class="skill"><span data-translate="creativity_skill">Creativity</span> <i class="val">93%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Problem Solving</span> <i class="val">85%</i></span>
+              <span class="skill"><span data-translate="problem_solving_skill">Problem Solving</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -442,21 +447,21 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Teamwork</span> <i class="val">80%</i></span>
+              <span class="skill"><span data-translate="teamwork_skill">Teamwork</span> <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Active Listening</span> <i class="val">70%</i></span>
+              <span class="skill"><span data-translate="active_listening_skill">Active Listening</span> <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Communication</span> <i class="val">85%</i></span>
+              <span class="skill"><span data-translate="communication_skill">Communication</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -475,8 +480,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Languages</h2>
-        <p>Communication skills that enable effective collaboration with international clients and teams</p>
+        <h2 data-translate="languages_title">Languages</h2>
+        <p data-translate="languages_description">Communication skills that enable effective collaboration with international clients and teams</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -486,14 +491,14 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>English</span> <i class="val">95%</i></span>
+              <span class="skill"><span data-translate="english_skill">English</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Persian (Farsi)</span> <i class="val">100%</i></span>
+              <span class="skill"><span data-translate="persian_skill">Persian (Farsi)</span> <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -504,14 +509,14 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Technical Writing</span> <i class="val">90%</i></span>
+              <span class="skill"><span data-translate="technical_writing_skill">Technical Writing</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>Documentation</span> <i class="val">85%</i></span>
+              <span class="skill"><span data-translate="documentation_skill">Documentation</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -530,8 +535,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>My professional journey spans over a decade of software development, focusing on creating innovative solutions and delivering exceptional user experiences across multiple platforms.</p>
+        <h2 data-translate="resume_title">Resume</h2>
+        <p data-translate="resume_description">My professional journey spans over a decade of software development, focusing on creating innovative solutions and delivering exceptional user experiences across multiple platforms.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -539,11 +544,11 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title" data-translate="summary_title">Summary</h3>
 
             <div class="resume-item pb-0">
-              <h4>Ali Pakdelnia</h4>
-              <p><em>Innovative Android developer with strong proficiency in Kotlin and extensive experience in building exceptional mobile applications. Passionate about technology and creating user-friendly, intuitive apps that seamlessly interact with device functionalities.</em></p>
+              <h4 data-translate="summary_name">Ali Pakdelnia</h4>
+              <p><em data-translate="summary_description">Innovative Android developer with strong proficiency in Kotlin and extensive experience in building exceptional mobile applications. Passionate about technology and creating user-friendly, intuitive apps that seamlessly interact with device functionalities.</em></p>
               <ul>
                 <li>Tehran, Iran</li>
                 <li>ali.pakdelnia77@gmail.com</li>
@@ -551,29 +556,29 @@
               </ul>
             </div><!-- Edn Resume Item -->
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title" data-translate="education_title">Education</h3>
             <div class="resume-item">
-              <h4>Bachelor of Mechanical Engineering (Mechatronics)</h4>
-              <h5>2015 - 2020</h5>
-              <p><em>Isfahan University of Technology, Iran</em></p>
-              <p>Graduated with a BSc. Degree in Mechatronics Engineering, exploring the seamless integration of mechanical, electrical, and software engineering principles.</p>
+              <h4 data-translate="education_degree">Bachelor of Mechanical Engineering (Mechatronics)</h4>
+              <h5 data-translate="education_period">2015 - 2020</h5>
+              <p><em data-translate="education_school">Isfahan University of Technology, Iran</em></p>
+              <p data-translate="education_description">Graduated with a BSc. Degree in Mechatronics Engineering, exploring the seamless integration of mechanical, electrical, and software engineering principles.</p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Programming Marathon Achievement</h4>
-              <h5>2023</h5>
-              <p><em>Sharif University of Technology ICT</em></p>
-              <p>Awarded in the 11th marathon of mobile phone programming, demonstrating exceptional skills in mobile development and problem-solving.</p>
+              <h4 data-translate="achievement_title">Programming Marathon Achievement</h4>
+              <h5 data-translate="achievement_period">2023</h5>
+              <p><em data-translate="achievement_school">Sharif University of Technology ICT</em></p>
+              <p data-translate="achievement_description">Awarded in the 11th marathon of mobile phone programming, demonstrating exceptional skills in mobile development and problem-solving.</p>
             </div><!-- Edn Resume Item -->
 
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" data-translate="experience_title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Full Stack Developer</h4>
-              <h5>2023 - Present</h5>
-              <p><em>Beniamin Company, Tehran, Iran</em></p>
+              <h4 data-translate="experience_job1_title">Full Stack Developer</h4>
+              <h5 data-translate="experience_job1_period">2023 - Present</h5>
+              <p><em data-translate="experience_job1_company">Beniamin Company, Tehran, Iran</em></p>
               <ul>
                 <li>Working as a Full Stack Developer on various web and mobile projects</li>
                 <li>Developing comprehensive solutions using modern technologies and frameworks</li>
@@ -583,9 +588,9 @@
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Android Developer, Kotlin Programmer</h4>
-              <h5>2023 - 2024</h5>
-              <p><em>Saze rahavard dena (denaru), Tehran, Iran</em></p>
+              <h4 data-translate="experience_job2_title">Android Developer, Kotlin Programmer</h4>
+              <h5 data-translate="experience_job2_period">2023 - 2024</h5>
+              <p><em data-translate="experience_job2_company">Saze rahavard dena (denaru), Tehran, Iran</em></p>
               <ul>
                 <li>Working on a transportation application named denaru</li>
                 <li>Developing native Android applications using Kotlin and modern Android development practices</li>
@@ -607,8 +612,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>A showcase of my recent projects demonstrating expertise in full-stack development, mobile applications, and innovative software solutions.</p>
+        <h2 data-translate="portfolio_title">Portfolio</h2>
+        <p data-translate="portfolio_description">A showcase of my recent projects demonstrating expertise in full-stack development, mobile applications, and innovative software solutions.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -629,8 +634,8 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/psychoapp-fullstack.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>PsychoApp</h4>
-                  <p>Full Stack .NET Core Application</p>
+                  <h4 data-translate="portfolio_psychoapp_title">PsychoApp</h4>
+                  <p data-translate="portfolio_psychoapp_desc">Full Stack .NET Core Application</p>
                   <a href="assets/img/portfolio/psychoapp-fullstack.jpg" title="PsychoApp" data-gallery="portfolio-gallery-fullstack" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alipakdelnia/psychoApp" title="View Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -641,8 +646,8 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/alifood-mobile.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>AliFood</h4>
-                  <p>Android Food Delivery App</p>
+                  <h4 data-translate="portfolio_alifood_title">AliFood</h4>
+                  <p data-translate="portfolio_alifood_desc">Android Food Delivery App</p>
                   <a href="assets/img/portfolio/alifood-mobile.jpg" title="AliFood" data-gallery="portfolio-gallery-mobile" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alipakdelnia/AliFood" title="View Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -653,8 +658,8 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/alipool-mobile.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Ali Pool</h4>
-                  <p>Android Pool Management App</p>
+                  <h4 data-translate="portfolio_alipool_title">Ali Pool</h4>
+                  <p data-translate="portfolio_alipool_desc">Android Pool Management App</p>
                   <a href="assets/img/portfolio/alipool-mobile.jpg" title="Ali Pool" data-gallery="portfolio-gallery-mobile" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alipakdelnia/ali_pool" title="View Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -665,8 +670,8 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/instagram-explore.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Instagram Explore</h4>
-                  <p>Android Glide Library Test Project</p>
+                  <h4 data-translate="portfolio_instagram_title">Instagram Explore</h4>
+                  <p data-translate="portfolio_instagram_desc">Android Glide Library Test Project</p>
                   <a href="assets/img/portfolio/instagram-explore.jpg" title="Instagram Explore" data-gallery="portfolio-gallery-mobile" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alipakdelnia/instagram_explore" title="View Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -677,8 +682,8 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/xiaomi-calculator.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Xiaomi Calculator</h4>
-                  <p>Android Calculator App Clone</p>
+                  <h4 data-translate="portfolio_calculator_title">Xiaomi Calculator</h4>
+                  <p data-translate="portfolio_calculator_desc">Android Calculator App Clone</p>
                   <a href="assets/img/portfolio/xiaomi-calculator.jpg" title="Xiaomi Calculator" data-gallery="portfolio-gallery-mobile" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/alipakdelnia/xiaomi_calculator" title="View Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
                 </div>
@@ -921,8 +926,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Ready to start your next project? I'm available for freelance work and full-time opportunities. Let's discuss how I can help bring your ideas to life with innovative software solutions.</p>
+        <h2 data-translate="contact_title">Contact</h2>
+        <p data-translate="contact_description">Ready to start your next project? I'm available for freelance work and full-time opportunities. Let's discuss how I can help bring your ideas to life with innovative software solutions.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -935,40 +940,40 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Location</h3>
-                  <p>Tehran, Iran</p>
+                  <h3 data-translate="contact_location_title">Location</h3>
+                  <p data-translate="contact_location">Tehran, Iran</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+989909601225</p>
+                  <h3 data-translate="contact_phone_title">Call Us</h3>
+                  <p data-translate="contact_phone">+989909601225</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
-                  <p>ali.pakdelnia77@gmail.com</p>
+                  <h3 data-translate="contact_email_title">Email Us</h3>
+                  <p data-translate="contact_email">ali.pakdelnia77@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                 <i class="bi bi-trophy flex-shrink-0"></i>
                 <div>
-                  <h3>Achievement</h3>
-                  <p>11th Mobile Programming Marathon Winner - Sharif University 2023</p>
+                  <h3 data-translate="contact_achievement_title">Achievement</h3>
+                  <p data-translate="contact_achievement">11th Mobile Programming Marathon Winner - Sharif University 2023</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
                 <i class="bi bi-briefcase flex-shrink-0"></i>
                 <div>
-                  <h3>Availability</h3>
-                  <p>Available for Freelance Projects & Full-time Opportunities</p>
+                  <h3 data-translate="contact_availability_title">Availability</h3>
+                  <p data-translate="contact_availability">Available for Freelance Projects & Full-time Opportunities</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1024,7 +1029,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ali Pakdelnia</strong> <span>All Rights Reserved</span></p>
+        <p><span data-translate="footer_copyright">© Copyright</span> <strong class="px-1 sitename" data-translate="hero_title">Ali Pakdelnia</strong> <span data-translate="footer_rights">All Rights Reserved</span></p>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -1057,6 +1062,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Translations JS File -->
+  <script src="assets/js/translations.js"></script>
 
 </body>
 
