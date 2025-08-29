@@ -1,7 +1,7 @@
 {
-  "name": "علی پاکدل نیا - برنامه‌نویس فول استک",
-  "short_name": "علی پاکدل نیا",
-  "description": "علی پاکدل نیا - برنامه‌نویس فول استک و توسعه‌دهنده اندروید در تهران",
+  "name": "Ali Pakdelnia - Full Stack Developer",
+  "short_name": "Ali Pakdelnia",
+  "description": "Ali Pakdelnia - Full Stack Developer and Android Developer in Tehran",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -20,6 +20,6 @@
     }
   ],
   "categories": ["business", "productivity", "developer"],
-  "lang": "fa",
-  "dir": "rtl"
+  "lang": "en",
+  "dir": "ltr"
 }

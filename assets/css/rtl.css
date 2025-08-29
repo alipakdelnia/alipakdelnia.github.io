@@ -5,6 +5,32 @@ body {
     font-family: 'Tahoma', 'Arial', sans-serif;
 }
 
+/* Language Switcher RTL Adjustments */
+.language-switcher {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.language-switcher a {
+    color: #6c757d;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.language-switcher a:hover {
+    background: rgba(0,123,255,0.1);
+    color: #007bff;
+}
+
+.language-switcher a.active {
+    background: #007bff;
+    color: white;
+}
+
 /* Header RTL Adjustments */
 .header .navmenu ul {
     text-align: right;

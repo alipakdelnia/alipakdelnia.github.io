@@ -1,8 +1,20 @@
-# علی پاکدل نیا | برنامه‌نویس فول استک و توسعه‌دهنده اندروید
+# Ali Pakdelnia | Full Stack Developer & Android Developer
 
-## درباره علی پاکدل نیا
+## About Ali Pakdelnia
 
-**علی پاکدل نیا** یک برنامه‌نویس فول استک و توسعه‌دهنده اندروید با ۵ سال تجربه در توسعه نرم‌افزار است. وی در تهران مستقر است و با چندین شرکت همکاری می‌کند و پروژه‌های فریلنسری می‌پذیرد.
+**Ali Pakdelnia** is a Full Stack Developer and Android Developer with 5 years of experience in software development. Based in Tehran, he collaborates with multiple companies and accepts freelance projects.
+
+## English Version
+- **Website**: https://alipakdelnia.github.io
+- **Primary language**: English
+- **SEO optimized**: Yes
+
+## Persian Version  
+- **Website**: https://alipakdelnia.github.io/fa/
+- **Language**: Persian (Farsi)
+- **SEO optimized**: Yes
+
+## About Ali Pakdelnia
 
 ## مهارت‌های فنی علی پاکدل نیا
 
