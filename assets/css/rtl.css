@@ -1,3 +1,19 @@
+/* Typed.js Cursor Styles */
+.typed-cursor {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.typed-cursor--blink {
+  animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /* RTL Support for Arabic and Persian */
 
 [dir="rtl"] {

@@ -534,9 +534,9 @@ function changeLanguage(lang) {
   // تغییر متن‌های با data-typed-items
   const typedElements = document.querySelectorAll('[data-typed-items]');
   typedElements.forEach(element => {
-    const key = element.getAttribute('data-typed-items');
-    if (translations[lang] && translations[lang][key]) {
-      element.setAttribute('data-typed-items', translations[lang][key]);
+    const translatedItems = translations[lang]['hero_typed_items'];
+    if (translatedItems) {
+      element.setAttribute('data-typed-items', translatedItems);
     }
   });
   
@@ -558,11 +558,11 @@ function changeLanguage(lang) {
   // به‌روزرسانی SEO meta tags بر اساس زبان
   updateSEOMetaTags(lang);
   
-  // راه‌اندازی مجدد Typed.js اگر وجود دارد
+  // راه‌اندازی مجدد Typed.js
   if (window.typed) {
     window.typed.destroy();
-    initTyped();
   }
+  initTyped();
 }
 
 // تابع به‌روزرسانی SEO meta tags
@@ -649,8 +649,14 @@ function initTyped() {
   if (typedElement) {
     const typedItems = typedElement.getAttribute('data-typed-items');
     if (typedItems) {
+      const strings = typedItems.split(',').map(item => item.trim());
+      
+      if (window.typed) {
+        window.typed.destroy();
+      }
+      
       window.typed = new Typed('.typed', {
-        strings: typedItems.split(','),
+        strings: strings,
         typeSpeed: 100,
         backSpeed: 50,
         backDelay: 2000,
