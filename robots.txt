@@ -1,8 +1,41 @@
 User-agent: *
 Allow: /
 
+# Block access to sensitive files
+Disallow: /forms/
+Disallow: /assets/vendor/
+Disallow: /assets/scss/
+Disallow: /assets/js/translations.js
+
+# Allow important assets
+Allow: /assets/css/
+Allow: /assets/img/
+Allow: /assets/js/main.js
+
 # Sitemap
 Sitemap: https://alipakdelnia.github.io/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
+
+# Additional search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Host
+Host: https://alipakdelnia.github.io

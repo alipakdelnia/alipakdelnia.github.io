@@ -555,10 +555,91 @@ function changeLanguage(lang) {
   });
   document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
   
+  // به‌روزرسانی SEO meta tags بر اساس زبان
+  updateSEOMetaTags(lang);
+  
   // راه‌اندازی مجدد Typed.js اگر وجود دارد
   if (window.typed) {
     window.typed.destroy();
     initTyped();
+  }
+}
+
+// تابع به‌روزرسانی SEO meta tags
+function updateSEOMetaTags(lang) {
+  const seoData = {
+    en: {
+      title: "Ali Pakdelnia | Full Stack Developer | Android Developer | .NET Core | Kotlin | Tehran",
+      description: "Ali Pakdelnia - Experienced Full Stack Developer and Android Developer in Tehran. Expert in .NET Core, Kotlin, React, Angular, JavaScript, TypeScript. 5+ years experience in software development. Available for freelance projects.",
+      keywords: "Ali Pakdelnia, Full Stack Developer, Android Developer, .NET Core Developer, Kotlin Developer, React Developer, Angular Developer, JavaScript Developer, TypeScript Developer, Tehran Developer, Iran Developer, Freelance Developer, Web Developer, Mobile Developer, Software Engineer, Tehran, Iran, Portfolio, Resume, Projects, AliFood, AliPool, PsychoApp, Denaru",
+      ogTitle: "Ali Pakdelnia | Full Stack Developer | Android Developer | .NET Core | Kotlin",
+      ogDescription: "Ali Pakdelnia - Experienced Full Stack Developer and Android Developer in Tehran. Expert in .NET Core, Kotlin, React, Angular. 5+ years experience. Available for freelance projects.",
+      twitterTitle: "Ali Pakdelnia | Full Stack Developer | Android Developer",
+      twitterDescription: "Experienced Full Stack Developer and Android Developer in Tehran. Expert in .NET Core, Kotlin, React, Angular. Available for freelance projects."
+    },
+    fa: {
+      title: "علی پاکدل نیا | برنامه‌نویس فول استک | توسعه‌دهنده اندروید | تهران",
+      description: "علی پاکدل نیا - برنامه‌نویس فول استک و توسعه‌دهنده اندروید با تجربه در تهران. متخصص در .NET Core، کاتلین، ری‌اکت، انگولار، جاوااسکریپت، تایپ‌اسکریپت. بیش از ۵ سال تجربه در توسعه نرم‌افزار. در دسترس برای پروژه‌های فریلنسری.",
+      keywords: "علی پاکدل نیا, برنامه‌نویس فول استک, توسعه‌دهنده اندروید, برنامه‌نویس .NET Core, برنامه‌نویس کاتلین, برنامه‌نویس ری‌اکت, برنامه‌نویس انگولار, برنامه‌نویس جاوااسکریپت, برنامه‌نویس تایپ‌اسکریپت, برنامه‌نویس تهران, برنامه‌نویس ایران, فریلنسر, توسعه‌دهنده وب, توسعه‌دهنده موبایل, مهندس نرم‌افزار, تهران, ایران, نمونه کار, رزومه, پروژه‌ها, علی فود, علی پول, پسیکو اپ, دنارو",
+      ogTitle: "علی پاکدل نیا | برنامه‌نویس فول استک | توسعه‌دهنده اندروید | تهران",
+      ogDescription: "علی پاکدل نیا - برنامه‌نویس فول استک و توسعه‌دهنده اندروید با تجربه در تهران. متخصص در .NET Core، کاتلین، ری‌اکت، انگولار. بیش از ۵ سال تجربه. در دسترس برای پروژه‌های فریلنسری.",
+      twitterTitle: "علی پاکدل نیا | برنامه‌نویس فول استک | توسعه‌دهنده اندروید",
+      twitterDescription: "برنامه‌نویس فول استک و توسعه‌دهنده اندروید با تجربه در تهران. متخصص در .NET Core، کاتلین، ری‌اکت، انگولار. در دسترس برای پروژه‌های فریلنسری."
+    },
+    ar: {
+      title: "علي باكدل نيا | مطور ويب شامل | مطور أندرويد | طهران",
+      description: "علي باكدل نيا - مطور ويب شامل ومطور أندرويد ذو خبرة في طهران. متخصص في .NET Core، كوتلين، رياكت، أنجولار، جافاسكريبت، تايبسكريبت. أكثر من ۵ سنوات خبرة في تطوير البرمجيات. متاح للمشاريع المستقلة.",
+      keywords: "علي باكدل نيا, مطور ويب شامل, مطور أندرويد, مطور .NET Core, مطور كوتلين, مطور رياكت, مطور أنجولار, مطور جافاسكريبت, مطور تايبسكريبت, مطور طهران, مطور إيران, مستقل, مطور ويب, مطور موبايل, مهندس برمجيات, طهران, إيران, معرض أعمال, سيرة ذاتية, مشاريع, علي فود, علي بول, تطبيق سايكو, دنارو",
+      ogTitle: "علي باكدل نيا | مطور ويب شامل | مطور أندرويد | طهران",
+      ogDescription: "علي باكدل نيا - مطور ويب شامل ومطور أندرويد ذو خبرة في طهران. متخصص في .NET Core، كوتلين، رياكت، أنجولار. أكثر من ۵ سنوات خبرة. متاح للمشاريع المستقلة.",
+      twitterTitle: "علي باكدل نيا | مطور ويب شامل | مطور أندرويد",
+      twitterDescription: "مطور ويب شامل ومطور أندرويد ذو خبرة في طهران. متخصص في .NET Core، كوتلين، رياكت، أنجولار. متاح للمشاريع المستقلة."
+    },
+    de: {
+      title: "Ali Pakdelnia | Full Stack Entwickler | Android Entwickler | .NET Core | Kotlin | Teheran",
+      description: "Ali Pakdelnia - Erfahrener Full Stack Entwickler und Android Entwickler in Teheran. Experte für .NET Core, Kotlin, React, Angular, JavaScript, TypeScript. Über 5 Jahre Erfahrung in der Softwareentwicklung. Verfügbar für Freelance-Projekte.",
+      keywords: "Ali Pakdelnia, Full Stack Entwickler, Android Entwickler, .NET Core Entwickler, Kotlin Entwickler, React Entwickler, Angular Entwickler, JavaScript Entwickler, TypeScript Entwickler, Teheran Entwickler, Iran Entwickler, Freelancer, Web Entwickler, Mobile Entwickler, Software Ingenieur, Teheran, Iran, Portfolio, Lebenslauf, Projekte, AliFood, AliPool, PsychoApp, Denaru",
+      ogTitle: "Ali Pakdelnia | Full Stack Entwickler | Android Entwickler | .NET Core | Kotlin",
+      ogDescription: "Ali Pakdelnia - Erfahrener Full Stack Entwickler und Android Entwickler in Teheran. Experte für .NET Core, Kotlin, React, Angular. Über 5 Jahre Erfahrung. Verfügbar für Freelance-Projekte.",
+      twitterTitle: "Ali Pakdelnia | Full Stack Entwickler | Android Entwickler",
+      twitterDescription: "Erfahrener Full Stack Entwickler und Android Entwickler in Teheran. Experte für .NET Core, Kotlin, React, Angular. Verfügbar für Freelance-Projekte."
+    }
+  };
+
+  if (seoData[lang]) {
+    const data = seoData[lang];
+    
+    // به‌روزرسانی title
+    document.title = data.title;
+    
+    // به‌روزرسانی meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) metaDescription.setAttribute('content', data.description);
+    
+    // به‌روزرسانی meta keywords
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) metaKeywords.setAttribute('content', data.keywords);
+    
+    // به‌روزرسانی Open Graph
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', data.ogTitle);
+    
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) ogDescription.setAttribute('content', data.ogDescription);
+    
+    // به‌روزرسانی Twitter Card
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute('content', data.twitterTitle);
+    
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescription) twitterDescription.setAttribute('content', data.twitterDescription);
+    
+    // به‌روزرسانی og:locale
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) {
+      const localeMap = { en: 'en_US', fa: 'fa_IR', ar: 'ar_SA', de: 'de_DE' };
+      ogLocale.setAttribute('content', localeMap[lang] || 'en_US');
+    }
   }
 }
 

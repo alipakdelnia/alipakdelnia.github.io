@@ -1,6 +1,29 @@
-# Ali Pakdelnia Portfolio Website
+# Ali Pakdelnia - Full Stack Developer Portfolio 🚀
 
-A modern, responsive portfolio website for Ali Pakdelnia - Full Stack Developer and Android Developer.
+A modern, responsive, multi-language portfolio website showcasing my expertise as a Full Stack Developer and Android Developer. Built with cutting-edge technologies and optimized for SEO performance.
+
+## 🌟 Key Features
+
+### ✨ Multi-Language Support
+- **4 Languages**: English, Persian (فارسی), Arabic (العربية), German (Deutsch)
+- **Dynamic Translation**: Single HTML file with JavaScript-based translation system
+- **RTL Support**: Full right-to-left layout support for Persian and Arabic
+- **Language Persistence**: Remembers user's language preference
+
+### 🎯 SEO Optimized
+- **Enhanced Meta Tags**: Comprehensive SEO meta tags for all languages
+- **Structured Data**: Rich schema markup for better search engine understanding
+- **Open Graph**: Optimized social media sharing
+- **Twitter Cards**: Enhanced Twitter sharing experience
+- **Sitemap**: XML sitemap with language alternates
+- **Robots.txt**: Optimized crawling directives
+- **PWA Ready**: Progressive Web App support
+
+### 📱 Responsive Design
+- **Mobile-First**: Optimized for all device sizes
+- **Modern UI**: Clean, professional design
+- **Fast Loading**: Optimized performance
+- **Accessibility**: WCAG compliant
 
 ## 🌟 Features
 
