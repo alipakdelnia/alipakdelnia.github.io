@@ -1,0 +1,25 @@
+{
+  "name": "علی پاکدل نیا - برنامه‌نویس فول استک",
+  "short_name": "علی پاکدل نیا",
+  "description": "علی پاکدل نیا - برنامه‌نویس فول استک و توسعه‌دهنده اندروید در تهران",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "developer"],
+  "lang": "fa",
+  "dir": "rtl"
+}
