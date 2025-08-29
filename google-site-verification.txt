@@ -1,0 +1,14 @@
+# Google Search Console Verification
+# Replace this content with your actual verification code from Google Search Console
+# Example: google-site-verification: google1234567890abcdef.html
+
+# Instructions:
+# 1. Go to Google Search Console: https://search.google.com/search-console
+# 2. Add your property: https://alipakdelnia.github.io/
+# 3. Choose "HTML tag" verification method
+# 4. Copy the verification code and replace this content
+# 5. Upload this file to your website root
+# 6. Verify ownership in Google Search Console
+
+# Your verification code will look something like:
+# google-site-verification: google1234567890abcdef.html

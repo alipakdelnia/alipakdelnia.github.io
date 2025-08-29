@@ -1,19 +1,23 @@
 User-agent: *
 Allow: /
 
+# Allow all important pages and assets
+Allow: /index.html
+Allow: /assets/css/
+Allow: /assets/img/
+Allow: /assets/js/main.js
+Allow: /assets/js/translations.js
+
 # Block access to sensitive files
 Disallow: /forms/
 Disallow: /assets/vendor/
 Disallow: /assets/scss/
-Disallow: /assets/js/translations.js
+Disallow: /.git/
+Disallow: /node_modules/
 
-# Allow important assets
-Allow: /assets/css/
-Allow: /assets/img/
-Allow: /assets/js/main.js
-
-# Sitemap
+# Sitemaps
 Sitemap: https://alipakdelnia.github.io/sitemap.xml
+Sitemap: https://alipakdelnia.github.io/sitemap.txt
 
 # Crawl-delay
 Crawl-delay: 1

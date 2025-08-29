@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Main Page with Language Alternates -->
+  <!-- Main Page -->
   <url>
     <loc>https://alipakdelnia.github.io/</loc>
     <lastmod>2024-12-29</lastmod>
@@ -14,36 +15,69 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://alipakdelnia.github.io/"/>
   </url>
   
-  <!-- Portfolio Details Page -->
+  <!-- Main Page with Language Parameters -->
   <url>
-    <loc>https://alipakdelnia.github.io/portfolio-details.html</loc>
+    <loc>https://alipakdelnia.github.io/?lang=en</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://alipakdelnia.github.io/?lang=fa</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://alipakdelnia.github.io/?lang=ar</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://alipakdelnia.github.io/?lang=de</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Section Anchors -->
+  <url>
+    <loc>https://alipakdelnia.github.io/#about</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Service Details Page -->
   <url>
-    <loc>https://alipakdelnia.github.io/service-details.html</loc>
+    <loc>https://alipakdelnia.github.io/#resume</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Starter Page -->
   <url>
-    <loc>https://alipakdelnia.github.io/starter-page.html</loc>
+    <loc>https://alipakdelnia.github.io/#portfolio</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   
-  <!-- Contact Form -->
   <url>
-    <loc>https://alipakdelnia.github.io/forms/contact.php</loc>
+    <loc>https://alipakdelnia.github.io/#skills</loc>
     <lastmod>2024-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://alipakdelnia.github.io/#contact</loc>
+    <lastmod>2024-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
 </urlset>
