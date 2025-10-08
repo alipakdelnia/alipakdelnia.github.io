@@ -16,8 +16,8 @@ Disallow: /.git/
 Disallow: /node_modules/
 
 # Sitemaps
-Sitemap: https://alipakdelnia.github.io/sitemap.xml
-Sitemap: https://alipakdelnia.github.io/sitemap.txt
+Sitemap: https://alipakdelnia.ir/sitemap.xml
+Sitemap: https://alipakdelnia.ir/sitemap.txt
 
 # Crawl-delay
 Crawl-delay: 1
@@ -42,4 +42,4 @@ User-agent: YandexBot
 Allow: /
 
 # Host
-Host: https://alipakdelnia.github.io
+Host: https://alipakdelnia.ir
